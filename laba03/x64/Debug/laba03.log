@@ -1,0 +1,6 @@
+﻿  laba03.cpp
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba03\laba03.cpp(194,45): warning C4101: lenz: неиспользованная локальная переменная
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba03\laba03.cpp(202,44): warning C4101: s2: неиспользованная локальная переменная
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba03\laba03.cpp(202,37): warning C4101: s: неиспользованная локальная переменная
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba03\laba03.cpp(201,22): warning C4101: i1: неиспользованная локальная переменная
+  laba03.vcxproj -> C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba03\x64\Debug\laba03.exe

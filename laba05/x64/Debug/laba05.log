@@ -1,0 +1,4 @@
+﻿  laba05.cpp
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba05\Header.h(512,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba05\Header.h(513,27): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  laba05.vcxproj -> C:\Users\denis\OneDrive\Рабочий стол\work\СД\laba05\x64\Debug\laba05.exe
