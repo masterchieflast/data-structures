@@ -535,3 +535,79 @@ void FindStr(job* (&a), int n) {
 	}
 	system("pause");
 }
+
+void FoundAlg(job* (&a), int n) {
+	int select;
+	cout << "1)интерполирующий поиск по зарплате\n"
+		<< "2)бинарный поиск по фамилии\n";
+	cin >> select;
+	system("cls");
+	if (select == 1) {
+		float find;
+		cout << "зарплата: ";
+		cin >> find;
+
+		bool fg = false;
+		int l = 0, r = n - 1, x = 0;
+
+		while (l < r && !fg) {
+			x = l + ((find - a[l].salary) * (l - r)) / (a[l].salary - a[r].salary);
+
+			if (a[x].salary < find)
+				l = x + 1;
+			else if (a[x].salary > find)
+				r = x - 1;
+			else {
+				l = x;
+				fg = true;
+			}
+		}
+		
+		if (a[l].salary == find) {
+			cout << "id у элемента с такой зарплатой: " << a[l].id;
+		} else if (a[r].salary == find) {
+			cout << "id у элемента с такой зарплатой: " << a[r].id;
+		} else {
+			cout << "такого элемента нет";
+		}
+		cout << endl;
+
+		system("pause");
+
+	}
+	else if (select == 2) {
+		string lastName;
+		cout << "lastName: ";
+		cin >> lastName;
+
+		int l = 0, r = n - 1;
+		
+		while (l < r) {
+			int mid = (r + l) / 2;
+
+			if (a[mid].lastName > lastName)
+				r = mid - 1;
+			else if (a[mid].lastName < lastName)
+				l = mid + 1;
+			else {
+				l = mid;
+				r = mid;
+			}
+			
+		}
+
+		if (a[l].lastName == lastName) {
+			cout << "id у элемента с такой фамилией: " << a[l].id;
+		}
+		else if (a[r].lastName == lastName) {
+			cout << "id у элемента с такой фамилией: " << a[r].id;
+		}
+		else {
+			cout << "такого элемента нет";
+		}
+		cout << endl;
+
+		system("pause");
+
+	}
+}

@@ -50,6 +50,9 @@ int main()
         case 7:
             FindStr(arr, len);
             break;
+        case 8 :
+            FoundAlg(arr, len);
+            break;
         default:
             break;
         }
